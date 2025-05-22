@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
 import * as Yup from "yup";
-import { register } from "../../redux/auth/authOperations";
+import { register } from "../../redux/auth/operations";
 import toast from "react-hot-toast";
 import styles from "./RegisterPage.module.css";
 
@@ -12,7 +12,7 @@ const validationSchema = Yup.object({
   password: Yup.string().min(7, "Minimum 7 characters").required("Required"),
 });
 
-const RegisterPage = () => {
+const Register = () => {
   const dispatch = useDispatch();
 
   return (
@@ -69,4 +69,4 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+export default Register;

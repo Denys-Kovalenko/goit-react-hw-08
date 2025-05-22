@@ -4,16 +4,13 @@ import {
   selectContacts,
   selectContactsLoading,
   selectContactsError,
-} from "../../redux/contacts/contactsSelectors";
+} from "../../redux/contacts/selectors";
 import { selectFilter } from "../../redux/filters/filtersSelectors";
-import {
-  fetchContacts,
-  deleteContact,
-} from "../../redux/contacts/contactsOperations";
+import { fetchContacts, deleteContact } from "../../redux/contacts/operations";
 import { setFilter } from "../../redux/filters/filtersSlice";
 import toast from "react-hot-toast";
 
-import ContactForm from "../../components/ContactForm/ContactForm"; // Імпорт форми
+import ContactForm from "../../components/ContactForm/ContactForm";
 import styles from "./ContactsPage.module.css";
 
 const ContactsPage = () => {

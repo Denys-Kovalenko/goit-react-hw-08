@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { refreshUser } from "./redux/auth/authOperations";
-import {
-  selectIsLoggedIn,
-  selectIsRefreshing,
-} from "./redux/auth/authSelectors";
+import { refreshUser } from "./redux/auth/operations";
+import { selectIsLoggedIn, selectIsRefreshing } from "./redux/auth/selectors";
 
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/HomePage/HomePage";
