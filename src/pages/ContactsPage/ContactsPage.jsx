@@ -5,9 +5,9 @@ import {
   selectContactsLoading,
   selectContactsError,
 } from "../../redux/contacts/selectors";
-import { selectFilter } from "../../redux/filters/filtersSelectors";
+import { selectFilter } from "../../redux/filters/selectors";
 import { fetchContacts, deleteContact } from "../../redux/contacts/operations";
-import { setFilter } from "../../redux/filters/filtersSlice";
+import { setFilter } from "../../redux/filters/slice";
 import toast from "react-hot-toast";
 
 import ContactForm from "../../components/ContactForm/ContactForm";
